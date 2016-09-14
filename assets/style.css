@@ -12,6 +12,11 @@ body {
 /*sidebar navigation*/
 
 .sidebar-open {
-    
+    margin: 0;
+    width: 25%;
+    background-color:#222;
 }
 
+.sidebar-close {
+    
+}
