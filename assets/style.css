@@ -9,12 +9,13 @@
 .primary-text-color    { color: #212121; }
 .secondary-text-color  { color: #757575; }
 .divider-color         { border-color: #BDBDBD; }
+.background0-color { background: #ebeff1}
 
 
 
 
 body {
-    background-color: #fff;
+    background-color: #ebeff1;
     color: #212121;
     margin: 0;
     font-family: 'Roboto',sans-serif;
