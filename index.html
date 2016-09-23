@@ -24,7 +24,7 @@
 <!--jquery ui-->
 <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css">
 	<!--custom css-->
-	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
 	<link rel="stylesheet" href="assets/style.css">
 
 
@@ -32,9 +32,9 @@
 
 <body>
 
-	<div class="navbar navbar-success">
+	<div class="navbar navbar-indigo">
 
-		<a id="menu-btn" class="navbar-brand" href="#"><i class="material-icons">menu</i></i></a>
+		<a id="menu-btn" class="navbar-brand" href="#"><i id="hamburger-menu" class="material-icons">menu</i></i></a>
 		<a class="navbar-brand" href="#">Generic</a>
 		<ul class="nav navbar-nav pull-right">
 			<li class="active">
@@ -45,35 +45,56 @@
 			</li>
 		</ul>
 	</div>
-<aside id="menu-toggle" class="sidebar-open">
+<aside id="menu-toggle" class="sidebar">
 	test
 </aside>
-	<section>
+	<section id="wrapper" class="wrapper">
 
-		<div class="content container-fluid">
+		<div id="content" class="content-shift container-fluid">
 
 			<div class="row">
 
-				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<div class="col-xs-12 col-sm-4 col-md-4col-lg-4">
+		<!--tix content-->
 
-					<!--tix content-->
-<div ng-controller="gridListDemoCtrl as vm" flex ng-cloak>
-  <md-grid-list
-        md-cols="1" md-cols-sm="2" md-cols-md="3" md-cols-gt-md="6"
-        md-row-height-gt-md="1:1" md-row-height="4:3"
-        md-gutter="8px" md-gutter-gt-sm="4px" >
 
-    <md-grid-tile ng-repeat="tile in vm.tiles"
-                  md-rowspan="{{tile.span.row}}"
-                  md-colspan="{{tile.span.col}}"
-                  md-colspan-sm="1"
-                  md-colspan-xs="1"
-                  ng-class="tile.background" >
-      <md-icon md-svg-icon="{{tile.icon}}"></md-icon>
-      <md-grid-tile-footer><h3>{{tile.title}}</h3></md-grid-tile-footer>
-    </md-grid-tile>
-  </md-grid-list>
+<div class="panel panel-success">
+	  <div class="panel-heading">
+			<h3 class="panel-title">Panel title</h3>
+	  </div>
+	  <div class="panel-body">
+			Panel content
+	  </div>
 </div>
+
+				</div>
+								<div class="col-xs-12 col-sm-4 col-md-4col-lg-4">
+		<!--tix content-->
+
+
+<div class="panel panel-success">
+	  <div class="panel-heading">
+			<h3 class="panel-title">Panel title</h3>
+	  </div>
+	  <div class="panel-body">
+			Panel content
+	  </div>
+</div>
+
+				</div>
+								<div class="col-xs-12 col-sm-4 col-md-4col-lg-4">
+		<!--tix content-->
+
+
+<div class="panel panel-success">
+	  <div class="panel-heading">
+			<h3 class="panel-title">Panel title</h3>
+	  </div>
+	  <div class="panel-body">
+			Panel content
+	  </div>
+</div>
+
 				</div>
 
 			</div>
